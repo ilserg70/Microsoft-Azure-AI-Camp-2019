@@ -74,3 +74,71 @@ Setup on day-of
 1. Git clone repo:  `git clone https://github.com/michhar/Azure-AI-Camp.git`
 2. Set up an Azure Storage container
 3. Download Azure ML Workspace `config.json`
+
+## Addition links
+
+### Model Interpretability/Explainabilty:
+
+`https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-machine-learning-interpretability`
+ 
+### AML Diagnostics:
+
+`https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-enable-app-insights`
+
+### Cluster performance metrics can be analyzed and monitored using Ganglia.  This is documented at:
+
+`https://docs.microsoft.com/en-us/azure/databricks/clusters/clusters-manage#--monitor-performance`
+
+### Intelligent Kiosk
+
+`https://github.com/microsoft/Cognitive-Samples-IntelligentKiosk`
+ 
+### Uploading to blob
+
+`https://azure.microsoft.com/en-us/features/storage-explorer/`
+
+`https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage`
+
+`https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-cli`
+
+### Upload a directory in Python:  
+
+`https://github.com/michhar/Azure-AI-Camp/tree/master/day2/1.1.ImageClassificationAmlCompute/scripts`
+ 
+### Custom computer vision examples – reference implementations (new Microsoft OSS project)
+
+`https://github.com/microsoft/ComputerVision`
+
+ 
+### OpenCV course: 
+
+`https://casis.llnl.gov/seminars/opencv`
+
+See OpenCV code examples in `Addition/`
+
+### "Horovod" and overall distributed training on Spark
+
+Horovod Timeline slide example regarding how to measure the time of a worker is waiting for data in a MPI distributed scenario
+
+`Addition/Distributed_Deep_Learning_Journey_(Horovod).pdf`  
+
+
+### PetaStorm
+
+A program that is often used with Horvod to build a distributed sampled dataset for DL:
+
+`https://docs.azuredatabricks.net/_static/notebooks/deep-learning/petastorm.html`
+
+### Distributed processing
+
+“Bandwidth optimal all-reduce algorithms for clusters of workstations. Journal of Parallel and Distributed Computing” :
+
+`http://websrv.cs.fsu.edu/~xyuan/paper/09jpdc.pdf`
+
+### Links on how AutoML feature selection and feature engineering works:
+
+`https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-automated-ml`
+
+`https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-create-portal-experiments#preprocess`
+ 
+ 
