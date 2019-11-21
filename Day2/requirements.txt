@@ -1,0 +1,8 @@
+azureml-sdk[automl]==1.0.74
+torch=1.1.0
+torchvision=0.3.0
+tensorflow==1.13.1
+keras==2.2.4
+opencv-python==4.1.1.26
+Pillow
+azure-storage-blob==2.1.0
