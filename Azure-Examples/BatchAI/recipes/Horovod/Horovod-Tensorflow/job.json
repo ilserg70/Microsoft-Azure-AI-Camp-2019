@@ -1,0 +1,30 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/BatchAI/master/schemas/2018-05-01/job.json",
+    "properties": {
+        "nodeCount": 2,
+        "horovodSettings": {
+            "pythonScriptFilePath": "$AZ_BATCHAI_JOB_MOUNT_ROOT/scripts/horovod/tensorflow_mnist.py"
+        },
+        "stdOutErrPathPrefix": "$AZ_BATCHAI_JOB_MOUNT_ROOT/logs",
+        "mountVolumes": {
+            "azureFileShares": [
+                {
+                    "azureFileUrl": "https://<AZURE_BATCHAI_STORAGE_ACCOUNT>.file.core.windows.net/logs",
+                    "relativeMountPath": "logs"
+                },
+                {
+                    "azureFileUrl": "https://<AZURE_BATCHAI_STORAGE_ACCOUNT>.file.core.windows.net/scripts",
+                    "relativeMountPath": "scripts"
+                }
+            ]
+        },
+        "jobPreparation": {
+          "commandLine": "apt update; apt install mpi-default-dev mpi-default-bin -y; pip install horovod"
+        },
+        "containerSettings": {
+            "imageSourceRegistry": {
+                "image": "tensorflow/tensorflow:1.8.0-gpu"
+            }
+        }
+    }
+}
